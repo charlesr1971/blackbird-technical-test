@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     private titleService: Title
   ) {
 
-    this.setTitle('Weather App Home');
+    this.setTitle('Blackbird Technical Test Home');
 
   }
 

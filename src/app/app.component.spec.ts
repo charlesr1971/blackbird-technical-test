@@ -48,10 +48,10 @@ describe('AppComponent', () => {
     expect(destroySpy).toHaveBeenCalled();
   });
 
-  it(`should have as title 'weather-app'`, () => {
+  it(`should have as title 'blackbird-technical-test'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('weather-app');
+    expect(app.title).toEqual('blackbird-technical-test');
   });
 
   it('should be mobile', fakeAsync(() => {
