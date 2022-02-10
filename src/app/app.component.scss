@@ -1,0 +1,33 @@
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.example-sidenav-container {
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  flex: 1 0 auto;
+}
+
+.mat-toolbar {
+  position: relative;
+}
+
+.mat-sidenav-container {
+    position: relative;
+    height: 100%;
+    margin-top: 0px !important;
+}
+
+.mat-sidenav {
+  width: 300px;
+}
+
+.mat-drawer-content {
+  width: 100%;
+  height: 95% !important;
+  padding: 30px;
+  box-sizing: border-box;
+}

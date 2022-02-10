@@ -1,0 +1,32 @@
+<div class="mat-wrapper">
+
+  <mat-card class="data-card" *ngFor="let weatherData of $weatherData | async; let i = index" role="group" [attr.tabindex]="i">
+    <mat-card-header>
+      <mat-icon mat-card-avatar>wb_cloudy</mat-icon>
+      <mat-card-title>Weather</mat-card-title>
+      <mat-card-subtitle>Weather Data</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon mat-list-icon>star_rate</mat-icon>
+          <div mat-line><strong>Location</strong> <em class="id-{{weatherData.id}}">{{ weatherData.name }}</em></div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>star_rate</mat-icon>
+          <div mat-line><strong>Temperature</strong> <span>{{ weatherData.temp }}</span></div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>star_rate</mat-icon>
+          <div mat-line><strong>Humidity</strong> <span>{{ weatherData.humidity }}</span></div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>star_rate</mat-icon>
+          <div mat-line><strong>Rain</strong> <span>{{ weatherData.precipitation }}</span></div>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
